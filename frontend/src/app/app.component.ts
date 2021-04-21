@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.api.getShoppingItems().subscribe(
-      (items: ShoppingItem[]) => this.items = items,
+      (items: any) => this.items = items,
       (error: any) => this.error = error
     );
   }
