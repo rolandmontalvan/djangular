@@ -21,7 +21,7 @@ import { ShoppingItem } from './shopping-item.interface.js';
 })
 export class AppComponent implements OnInit {
 
-  items: ShoppingItem[];
+  items: ShoppingItem[]=[];
   error: any;
 
   constructor(private api: ApiService) { }
